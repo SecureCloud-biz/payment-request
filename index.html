@@ -2146,7 +2146,8 @@
             <li>If <var>details</var>["<a>regionCode</a>"] is present and not
             the empty string:
               <ol>
-                <li>Let <var>regionCode</var> be the result of <a data-cite=
+                <li>Let <var>regionCode</var> be the result of <a>stripping
+                leading and trailing ASCII whitespace</a> and <a data-cite=
                 "!INFRA#ascii-uppercase">ASCII uppercasing</a>
                 <var>details</var>["<a>regionCode</a>"].
                 </li>
@@ -2279,7 +2280,7 @@
           <h2>
             <dfn>regionCode</dfn> attribute
           </h2>
-          <p>
+          <p data-link-for="">
             Represents the <a>region</a> of the address as an [[!ISO3166-2]]
             code. When getting, returns the value of the
             <a>PaymentAddress</a>'s <a>[[\regionCode]]</a> internal slot.
